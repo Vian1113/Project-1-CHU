@@ -12783,8 +12783,26 @@ sub {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .logo a {
+    width: 175px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo a {
+    display: none;
+  }
+}
+
 .logo img {
   max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 50%;
+  }
 }
 
 .navbar {
@@ -12792,6 +12810,18 @@ sub {
   font-weight: bolder;
   line-height: 33.6px;
   padding-left: 0px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 0.8rem;
+  }
 }
 
 .dropdownlist {
@@ -12907,6 +12937,12 @@ sub {
   grid-gap: 15px 83px;
 }
 
+@media (max-width: 576px) {
+  .selectbar {
+    grid-gap: 15px 35px;
+  }
+}
+
 .banner {
   height: 450px;
   background-image: url("../img/banner.png");
@@ -12976,12 +13012,37 @@ sub {
   }
 }
 
+@media (max-width: 768px) {
+  .fixedicon-hor {
+    padding: 0px 10px;
+    border-radius: 0px 0px 25px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixedicon-hor {
+    display: none;
+  }
+}
+
 .fixedicon-hor p {
   margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+  .fixedicon-hor p {
+    font-size: 0.3rem;
+  }
+}
+
 .fixedicon-hor img {
   width: 80%;
+}
+
+@media (max-width: 768px) {
+  .fixedicon-hor img {
+    width: 40%;
+  }
 }
 
 .contentlist {
@@ -13140,7 +13201,7 @@ sub {
 }
 
 .faq {
-  margin-top: 180px;
+  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {

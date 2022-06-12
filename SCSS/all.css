@@ -13143,6 +13143,12 @@ sub {
   margin-top: 180px;
 }
 
+@media (max-width: 1200px) {
+  .faq {
+    margin-top: 65px;
+  }
+}
+
 .list {
   border: 1.5px solid #8D6B52;
   border-radius: 15px;

@@ -533,6 +533,11 @@ sub {
 
 .faq {
     margin-top: 180px;
+
+    @include extralarge{
+        margin-top: 65px;
+    }
+
 }
 
 .list{

@@ -152,12 +152,14 @@ sub {
         display: block;
         text-align: center;
 
-        @include  mediumsize{
+        @include large{
             width:175px;
-        }
 
+        }
+        
         @include smallsize{
             display:none;
+
         }
 
     }
@@ -184,7 +186,7 @@ sub {
         font-size: 1rem;
     }
 
-    @include mediumsize{
+    @include smallsize{
         font-size: 0.8rem;
     }
 
@@ -537,11 +539,20 @@ sub {
 .swiper-button-prev2{
     left:213px;
     top:314px;
+
+    @include extralarge{
+        left:187px;
+        top:288px;
+    }
+
+
     @include large{
-        left:167px;
+        left:123px;
+        top:257px;
     }
     @include mediumsize{
-        left:111px;
+        left:48px;
+        top:225px;
     }
 
 }
@@ -549,11 +560,19 @@ sub {
 .swiper-button-next2{
     right:213px;
     top:314px;
+    @include extralarge{
+        right:187px;
+        top:288px;
+    }
+
+
     @include large{
-        right:167px;
+        right:123px;
+        top:257px;
     }
     @include mediumsize{
-        right:111px;
+        right:48px;
+        top:225px;
     }
 }
 

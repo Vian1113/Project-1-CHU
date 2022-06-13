@@ -12783,7 +12783,7 @@ sub {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .logo a {
     width: 175px;
   }
@@ -12818,7 +12818,7 @@ sub {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar {
     font-size: 0.8rem;
   }
@@ -13156,15 +13156,24 @@ sub {
   top: 314px;
 }
 
+@media (max-width: 1200px) {
+  .swiper-button-prev2 {
+    left: 187px;
+    top: 288px;
+  }
+}
+
 @media (max-width: 992px) {
   .swiper-button-prev2 {
-    left: 167px;
+    left: 123px;
+    top: 257px;
   }
 }
 
 @media (max-width: 768px) {
   .swiper-button-prev2 {
-    left: 111px;
+    left: 48px;
+    top: 225px;
   }
 }
 
@@ -13173,15 +13182,24 @@ sub {
   top: 314px;
 }
 
+@media (max-width: 1200px) {
+  .swiper-button-next2 {
+    right: 187px;
+    top: 288px;
+  }
+}
+
 @media (max-width: 992px) {
   .swiper-button-next2 {
-    right: 167px;
+    right: 123px;
+    top: 257px;
   }
 }
 
 @media (max-width: 768px) {
   .swiper-button-next2 {
-    right: 111px;
+    right: 48px;
+    top: 225px;
   }
 }
 

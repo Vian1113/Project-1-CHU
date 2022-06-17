@@ -75,12 +75,13 @@ sub {
 
 //pagetop
 
-.pagetop {
-    position: relative;
+#pagetop {
+    //position: relative;
     position: fixed;
     bottom: 10px;
     right: 10px;
     z-index: 100;
+    display: none;
 
 
     p {
@@ -98,14 +99,21 @@ sub {
 
 }
 
-.socialicon {
-    position: absolute;
-    bottom: 513px;
+#socialicon {
+    display:none;
+    position: fixed;
+    top: 0px;
     left: 25px;
     padding: 16px 6px;
     z-index: 100;
 
+    &show{
+        display:block;
+    }
+
 }
+
+
 
 
 
@@ -348,7 +356,8 @@ sub {
     }
 }
 
-.fixedicon {
+#fixedicon {
+    display:none;
     position: fixed;
     top: 15px;
     right: 0;
@@ -359,6 +368,7 @@ sub {
     border-radius: 30px 0px 0px 30px;
     z-index: 100;
     opacity: 75%;
+
 
     @include extralarge() {
         display: none;
@@ -377,48 +387,48 @@ sub {
     }
 }
 
-.fixedicon-hor {
-    display: none;
-    position: fixed;
-    top: 0px;
-    right: 5px;
-    padding: 3px 35px;
+// .fixedicon-hor {
+//     display: none;
+//     position: fixed;
+//     top: 0px;
+//     right: 5px;
+//     padding: 3px 35px;
 
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 30px 30px;
-    z-index: 100;
-    opacity: 75%;
+//     background: rgba(255, 255, 255, 0.8);
+//     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+//     border-radius: 0px 0px 30px 30px;
+//     z-index: 100;
+//     opacity: 75%;
 
-    @include extralarge() {
-        display: block;
-    }
+//     @include extralarge() {
+//         display: block;
+//     }
 
-    @include mediumsize() {
+//     @include mediumsize() {
         
-        padding: 0px 10px;
-        border-radius: 0px 0px 25px 25px;
-    }
-    @include smallsize() {
-        display:none;
-    }
+//         padding: 0px 10px;
+//         border-radius: 0px 0px 25px 25px;
+//     }
+//     @include smallsize() {
+//         display:none;
+//     }
 
 
 
-    p {
-        margin-bottom: 5px;
-        @include mediumsize() {
-            font-size: 0.3rem;
-        }
-    }
+//     p {
+//         margin-bottom: 5px;
+//         @include mediumsize() {
+//             font-size: 0.3rem;
+//         }
+//     }
 
-    img {
-        width: 80%;
-        @include mediumsize() {
-            width:40%;
-        }
-    }
-}
+//     img {
+//         width: 80%;
+//         @include mediumsize() {
+//             width:40%;
+//         }
+//     }
+// }
 
 
 

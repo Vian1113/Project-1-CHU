@@ -12720,15 +12720,15 @@ sub {
 }
 
 /* 首頁樣式 */
-.pagetop {
-  position: relative;
+#pagetop {
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 100;
+  display: none;
 }
 
-.pagetop p {
+#pagetop p {
   font-family: 'Nuosu SIL', serif;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -12742,12 +12742,17 @@ sub {
   height: 5%;
 }
 
-.socialicon {
-  position: absolute;
-  bottom: 513px;
+#socialicon {
+  display: none;
+  position: fixed;
+  top: 0px;
   left: 25px;
   padding: 16px 6px;
   z-index: 100;
+}
+
+#socialiconshow {
+  display: block;
 }
 
 .header {
@@ -12965,7 +12970,8 @@ sub {
   color: #8D6B52;
 }
 
-.fixedicon {
+#fixedicon {
+  display: none;
   position: fixed;
   top: 15px;
   right: 0;
@@ -12979,70 +12985,17 @@ sub {
 }
 
 @media (max-width: 1200px) {
-  .fixedicon {
+  #fixedicon {
     display: none;
   }
 }
 
-.fixedicon p {
+#fixedicon p {
   margin-bottom: 12px;
 }
 
-.fixedicon img {
+#fixedicon img {
   width: 80%;
-}
-
-.fixedicon-hor {
-  display: none;
-  position: fixed;
-  top: 0px;
-  right: 5px;
-  padding: 3px 35px;
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 0px 0px 30px 30px;
-  z-index: 100;
-  opacity: 75%;
-}
-
-@media (max-width: 1200px) {
-  .fixedicon-hor {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .fixedicon-hor {
-    padding: 0px 10px;
-    border-radius: 0px 0px 25px 25px;
-  }
-}
-
-@media (max-width: 576px) {
-  .fixedicon-hor {
-    display: none;
-  }
-}
-
-.fixedicon-hor p {
-  margin-bottom: 5px;
-}
-
-@media (max-width: 768px) {
-  .fixedicon-hor p {
-    font-size: 0.3rem;
-  }
-}
-
-.fixedicon-hor img {
-  width: 80%;
-}
-
-@media (max-width: 768px) {
-  .fixedicon-hor img {
-    width: 40%;
-  }
 }
 
 .contentlist {

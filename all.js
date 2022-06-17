@@ -11,4 +11,31 @@ $(document).ready(function (){
 
     });
 
+    $(window).scroll(function(){
+        
+        var scrolltop =$(window).scrollTop();
+
+        if(scrolltop >=500){
+            $("#pagetop").show();
+            $("#fixedicon").show();
+            $("#socialicon").show();
+        }else{
+            $("#pagetop").hide();
+            $("#fixedicon").hide();
+            $("#socialicon").hide();
+        }
+       
+
+
+   });
+
+
+
+
+
+
+
+
+
+
 });

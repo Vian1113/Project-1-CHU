@@ -13222,23 +13222,28 @@ sub {
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
 }
 
+.faqcontent {
+  cursor: pointer;
+}
+
 .faqcontent a {
   color: #000000;
 }
 
 .moreqa a {
-  border: 1.5px solid;
-  border-radius: 11.7224px;
-  color: #8D6B52;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  color: #757575;
 }
 
 .moreqa a:hover {
-  background-color: #8D6B52;
-  color: #ffffff;
+  text-decoration: underline;
 }
 
 .footerimg {
-  height: 520px;
+  height: 600px;
   background-image: url("../img/footer-bg.png");
   background-repeat: no-repeat;
   background-size: contain;

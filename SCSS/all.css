@@ -12728,12 +12728,17 @@ sub {
   display: none;
 }
 
+#pagetop img {
+  margin-bottom: 8px;
+}
+
 #pagetop p {
   font-family: 'Nuosu SIL', serif;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  text-orientation: upright;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: black;
 }
 
@@ -12745,7 +12750,7 @@ sub {
 #socialicon {
   display: none;
   position: fixed;
-  top: 0px;
+  top: 60px;
   left: 25px;
   padding: 16px 6px;
   z-index: 100;
@@ -12774,30 +12779,54 @@ sub {
   color: #F6D470;
 }
 
+.solgan {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #ffffff;
+}
+
+.solgan h2, .solgan .h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.solgan p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .headercontent {
   position: absolute;
   top: 0%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.nav {
+  position: fixed;
+  max-height: 58px;
+  background-color: #F6D470;
+  color: #ffffff;
+  z-index: 10;
+  gap: 20px;
+  padding-right: 0px;
+}
+
+.logo {
+  position: relative;
+  top: -7px;
+  max-width: 188px;
 }
 
 .logo a {
   display: block;
   text-align: center;
-}
-
-@media (max-width: 992px) {
-  .logo a {
-    width: 175px;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo a {
-    display: none;
-  }
 }
 
 .logo img {
@@ -12812,8 +12841,7 @@ sub {
 
 .navbar {
   font-size: 1.2rem;
-  font-weight: bolder;
-  line-height: 33.6px;
+  gap: 100px;
   padding-left: 0px;
 }
 
@@ -12829,10 +12857,15 @@ sub {
   }
 }
 
+.navbar li {
+  padding-bottom: 35px;
+}
+
 .dropdownlist {
   display: none;
   position: absolute;
   padding-left: 0;
+  background-color: #F6D470;
 }
 
 .dropdownlist li {
@@ -12845,10 +12878,13 @@ sub {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  margin: 10px;
 }
 
-.menubtn {
-  color: #ffffff;
+.dropdownlist li:hover {
+  font-weight: bolder;
 }
 
 .menubtn:after {
@@ -12856,14 +12892,14 @@ sub {
   display: block;
   width: 0%;
   height: 3px;
-  margin: 2px auto;
+  margin: 1px auto;
   background-color: #ffffff;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
 
 .menubtn:hover {
-  color: #F6D470;
+  color: #8D6B52;
 }
 
 .menu:hover a:after {
@@ -12973,7 +13009,7 @@ sub {
 #fixedicon {
   display: none;
   position: fixed;
-  top: 15px;
+  top: 75px;
   right: 0;
   padding: 16px 6px;
   background: rgba(255, 255, 255, 0.8);
@@ -13182,8 +13218,8 @@ sub {
 }
 
 .list {
-  border: 1.5px solid #8D6B52;
-  border-radius: 15px;
+  -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
 }
 
 .faqcontent a {

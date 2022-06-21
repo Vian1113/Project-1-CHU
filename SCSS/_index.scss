@@ -132,6 +132,7 @@ sub {
     position: relative;
 }
 
+//輪播圖
 .swiper {
 
     margin: 0 auto;
@@ -144,13 +145,25 @@ sub {
     background-color: #8D6B52
 }
 
+.swiper-pagination{
+    @include smallsize{
+        display: none;
+    }
+}
+
 .swiper-button-next1,
 .swiper-button-prev1 {
 
     color: #F6D470;
+    @include smallsize{
+        display: none;
+    }
 
 }
+//輪播結束
 
+
+//輪播圖上的標語
 .solgan {
     position: absolute;
     top: 6%;
@@ -158,15 +171,28 @@ sub {
     transform: translate(-50%, -50%);
     z-index: 5;
     color: #ffffff;
+    @include large{
+        top:4%;
+    }
+    @include smallsize{
+        top:3%;
+    }
+
 
     h2 {
-        font-size: 2.5rem;
         font-weight: bold;
+        font-size: 2.5rem;
+        @include smallsize{
+            font-size: 1.5rem;
+        }
     }
 
     p {
-        font-size: 1rem;
         font-weight: bold;
+        font-size: 0.8rem;
+        @include smallsize{
+            font-size: 0.5rem;
+        }
     }
 }
 
@@ -179,18 +205,7 @@ sub {
 }
 
 
-
-
-.nav {
-    position: fixed;
-    max-height: 58px;
-    background-color: #F6D470;
-    color: #ffffff;
-    z-index: 10;
-    gap: 20px;
-    padding-right: 0px;
-}
-
+//Logo
 .logo {
     position: relative;
     top: -7px;
@@ -200,42 +215,51 @@ sub {
         display: block;
         text-align: center;
 
-        // @include large{
-        //     width:175px;
+        @include mediumsize{
+             display:none;
 
-        // }
-
-        // @include smallsize{
-        //     display:none;
-
-        // }
-
+         }
     }
 
     img {
         max-width: 60%;
 
         @include mediumsize {
-            max-width: 50%;
+            display:none;
+
         }
-
-
+    }
+}
+//768px以下的logo
+.logowhite{
+    img{
+        width:100px;
     }
 }
 
-
+//鎖定上方最大的nav
+.nav {
+    position: fixed;
+    max-height: 58px;
+    background-color: #F6D470;
+    color: #ffffff;
+    z-index: 10;
+    gap: 20px;
+    padding-right: 0px;
+}
+//nav裡面的清單
 .navbar {
 
     font-size: 1.2rem;
-    gap: 100px;
+    gap: 50px;
     padding-left: 0px;
 
     @include large {
         font-size: 1rem;
     }
 
-    @include smallsize {
-        font-size: 0.8rem;
+    @include mediumsize {
+        display:none
     }
 
     li {
@@ -244,30 +268,22 @@ sub {
 
 }
 
-
-.dropdownlist {
+.navmobile{
     display: none;
     position: absolute;
-    padding-left: 0;
+    left: 0;
+    right: 0;
+    top:46px;
+    //bottom:0;
+    //flex-direction: column;
+    //transform:translateY(100%);
     background-color: #F6D470;
-
-    li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0px;
-        padding-top: 10px;
-        margin: 10px;
-
-        &:hover {
-            font-weight: bolder;
-        }
+    menu{
+        width:100%;
     }
-
 }
 
-
-
+//每一個清單的樣式與hover效果
 .menubtn {
 
 
@@ -290,6 +306,9 @@ sub {
 .menu:hover {
     a:after {
         width: 85%;
+        @include mediumsize{
+        width:20%;
+        }
     }
 
     &:hover .dropdownlist {
@@ -299,6 +318,40 @@ sub {
     }
 
 }
+
+
+
+//第二層下拉式選單
+.dropdownlist {
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    background-color: #F6D470;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        margin: 10px;
+
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+
+}
+
+//漢堡選單圖示
+svg{
+    
+    width:60px;
+    height:50px;
+
+}
+
+
 
 
 
@@ -673,7 +726,17 @@ sub {
         margin-top: 65px;
     }
 
+    &detail{
+        display: none;
+    }
+
 }
+
+.active{
+    color:#8D6B52;
+    font-weight: bolder;
+}
+
 
 .list {
 
@@ -687,7 +750,13 @@ sub {
     a {
         color: #000000;
     }
+
+    img{
+        width:30px;
+        font-weight: bold;
+    }
 }
+
 
 
 .moreqa {

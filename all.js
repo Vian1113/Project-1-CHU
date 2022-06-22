@@ -35,21 +35,7 @@ $(document).ready(function () {
         
     });
 
-    // var y = true;
-    //  $(".faqcontent").click(function (e) {
-    //      e.preventDefault();
-    //     if(y){
-    //         $(this).find("img").attr("src","img/dash.svg")
-    //     }else{
-    //         $(this).find("img").attr("src","img/plus.svg")
-    //     }
-
-    //      y =!y;
-        
-
-    //  });
-
-
+    
     //懸浮常用icon與pagetop
     $(window).scroll(function () {
 

@@ -107,7 +107,7 @@
 
     </div>
 
-    <div class="solgan text-center container-fluid">
+    <div class="solgan text-center">
       <h2>We Care Your Pet Everyday</h2>
       <p>隨時將毛孩放在掌心呵護，日日為寵物著想、代替忙碌飼主給予最好的照顧</p>
     </div>
@@ -136,62 +136,53 @@
       </div>
     </div>
 
-    <div class="container headercontent">
-
-      <!-- <nav>
-        <ul class="navbar pt-4 d-flex justify-content-between align-items-center">
-          <li class="menu "><a class="menubtn" href="#">關於PetDay</a></li>
-          <li class="menu  jq-clickBtn"><a class="menubtn" href="#">服務內容</a>
-            <ul class="dropdownlist jq-dropdown">
-              <li><a href="#">到府美容</a></li>
-              <li><a href="#">到府照顧</a></li>
-              <li><a href="#">遛狗散步</a></li>
-              <li><a href="#">轉介服務</a></li>
-            </ul>
-
-          </li>
-          <li class="menu "><a class="menubtn" href="#">寵物保姆</a></li>
-          <h1 class="logo"><a class="menubtn" href="#"><img src="img/logo.png" alt="logo"></a></h1>
-          
-          <li class="menu "><a class="menubtn" href="#">成為保姆</a></li>
-          <li class="menu "><a class="menubtn" href="#">常見問題</a></li>
-          <li class="menu"><a class="menubtn" href="#">登入/註冊</a></li>
-
-        </ul>
-      </nav> -->
-      <!-- <div class="row justify-content-center">
-        <div class=" col-8 search d-flex flex-column align-items-center">
-          <h2 class="fw-bold">搜尋服務</h2>
-          <div class="selectbar">
-            <select class="form-select form-select-lg mb-3 item" aria-label=".form-select-lg example">
-              <option selected>所在地</option>
-              <option value="1">台北市</option>
-              <option value="2">新北市</option>
-              <option value="3">桃園市</option>
-            </select>
-
-            <select class="form-select form-select-lg mb-3 item" aria-label=".form-select-lg example">
-              <option selected>服務類型</option>
-              <option value="1">到府美容</option>
-              <option value="2">到府照顧</option>
-              <option value="3">遛狗散步</option>
-            </select>
-
-            <select class="form-select form-select-lg mb-3 item" aria-label=".form-select-lg example">
-              <option selected>寵物類型</option>
-              <option value="1">小型犬/貓</option>
-              <option value="2">中型犬</option>
-              <option value="2">大型犬</option>
-            </select>
-          </div>
-          <div class="searchbtn">
-            <p><a href="#">搜尋<span style="color:transparent;">s</span><i
-                  class="fa-solid fa-magnifying-glass fa-search"></i></a></p>
-
-          </div>
-        </div>
-      </div> -->
+    <div class="d-md-flex justify-content-center searchbar pt-4 pb-4 ps-2 pe-2">
+    <div class="option">
+      <select name="location">
+        <option selected>所在地</option>
+        <option value="1">台北市</option>
+        <option value="2">新北市</option>
+        <option value="3">桃園市</option>
+      </select>
     </div>
+
+    <div class="option">
+      <select name="servicetype">
+        <option selected>服務類型</option>
+        <option value="1">到府美容</option>
+        <option value="2">到府照顧</option>
+        <option value="3">遛狗散步</option>
+        <option value="4">醫療轉介</option>
+        <option value="5">殯儀轉介</option>
+      </select>
+    </div>
+
+    <div class="option">
+      <select name="type">
+        <option selected>寵物類型</option>
+        <option value="1">貓</option>
+        <option value="2">犬</option>
+      </select>
+    </div>
+
+    <div class="option">
+      <select name="size">
+        <option selected>寵物體型</option>
+        <option value="1">小型</option>
+        <option value="2">中型</option>
+        <option value="3">大型</option>
+      </select>
+    </div>
+
+    <div class="searchbtn">
+      <p><a href="#">搜尋<span style="color:transparent;">s</span><i
+            class="fa-solid fa-magnifying-glass fa-search"></i></a></p>
+
+    </div>
+
+
+    </div>
+
 
   </header>
 
@@ -346,7 +337,7 @@
     <div class="servicebtn"><a class="bg-primary mt-4" href="">了解更多</a></div>
   </div>
 
-
+<!-- 保姆評價 -->
   <div class="container text-center sitterarea">
     <div class="sitterbg position-relative">
       <img src="img/sitterbg.png" alt="sitterbg" class="sitterbg">
@@ -441,7 +432,7 @@
 
 
   </div>
-
+<!-- 常見問題 -->
   <div class="container text-center faq">
     <h3 class="mb-4 fw-bold text-secondary">常見問題</h3>
     <div class="row justify-content-center">
@@ -493,7 +484,7 @@
     <div class="mt-4 moreqa"><a href="#">點擊閱讀更多常見問題</a></div>
 
   </div>
-
+<!-- footer -->
   <div class="footerimg"></div>
 
   <div class="footer">
@@ -514,8 +505,9 @@
 
   <!-- swiper 套件js 引入 -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <!-- swiper 首圖輪播js 加入參數 -->
+  
   <script>
+    //首圖輪播js 加入參數
     const swiper1 = new Swiper('.indeximg', {
       // Optional parameters
       direction: 'horizontal',
@@ -539,7 +531,7 @@
     });
 
 
-
+    //保姆評價 加入參數
     const swiper2 = new Swiper('.sitter', {
       // Optional parameters
       direction: 'horizontal',

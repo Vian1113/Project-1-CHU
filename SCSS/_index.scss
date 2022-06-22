@@ -1,3 +1,17 @@
+@mixin minlarge {
+    @media(min-width:1300px) {
+        @content;
+    }
+}
+
+@mixin minextralarge {
+    @media(min-width:1920px) {
+        @content;
+    }
+}
+
+
+
 @mixin extraextralarge {
     @media(max-width:1920px) {
         @content;
@@ -145,8 +159,8 @@ sub {
     background-color: #8D6B52
 }
 
-.swiper-pagination{
-    @include smallsize{
+.swiper-pagination {
+    @include smallsize {
         display: none;
     }
 }
@@ -155,11 +169,13 @@ sub {
 .swiper-button-prev1 {
 
     color: #F6D470;
-    @include smallsize{
+
+    @include smallsize {
         display: none;
     }
 
 }
+
 //輪播結束
 
 
@@ -171,18 +187,21 @@ sub {
     transform: translate(-50%, -50%);
     z-index: 5;
     color: #ffffff;
-    @include large{
-        top:4%;
+
+    @include large {
+        top: 4%;
     }
-    @include smallsize{
-        top:3%;
+
+    @include smallsize {
+        top: 3%;
     }
 
 
     h2 {
         font-weight: bold;
         font-size: 2.5rem;
-        @include smallsize{
+
+        @include smallsize {
             font-size: 1.5rem;
         }
     }
@@ -190,19 +209,25 @@ sub {
     p {
         font-weight: bold;
         font-size: 0.8rem;
-        @include smallsize{
+
+        @include smallsize {
             font-size: 0.5rem;
         }
     }
 }
 
+
 .headercontent {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    font-size: 0.8rem;
 }
+
+// .headercontent {
+//     position: absolute;
+//     top: 0%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 10;
+// }
 
 
 //Logo
@@ -215,25 +240,26 @@ sub {
         display: block;
         text-align: center;
 
-        @include mediumsize{
-             display:none;
+        @include mediumsize {
+            display: none;
 
-         }
+        }
     }
 
     img {
         max-width: 60%;
 
         @include mediumsize {
-            display:none;
+            display: none;
 
         }
     }
 }
+
 //768px以下的logo
-.logowhite{
-    img{
-        width:100px;
+.logowhite {
+    img {
+        width: 100px;
     }
 }
 
@@ -247,6 +273,7 @@ sub {
     gap: 20px;
     padding-right: 0px;
 }
+
 //nav裡面的清單
 .navbar {
 
@@ -259,7 +286,7 @@ sub {
     }
 
     @include mediumsize {
-        display:none
+        display: none
     }
 
     li {
@@ -268,18 +295,19 @@ sub {
 
 }
 
-.navmobile{
+.navmobile {
     display: none;
     position: absolute;
     left: 0;
     right: 0;
-    top:46px;
+    top: 46px;
     //bottom:0;
     //flex-direction: column;
     //transform:translateY(100%);
     background-color: #F6D470;
-    menu{
-        width:100%;
+
+    menu {
+        width: 100%;
     }
 }
 
@@ -306,8 +334,9 @@ sub {
 .menu:hover {
     a:after {
         width: 85%;
-        @include mediumsize{
-        width:20%;
+
+        @include mediumsize {
+            width: 20%;
         }
     }
 
@@ -344,58 +373,127 @@ sub {
 }
 
 //漢堡選單圖示
-svg{
+svg {
+
+    width: 60px;
+    height: 50px;
+
+}
+
+
+
+//服務搜尋bar
+
+
+.option {
+    /*用div的样式代替select的样式*/
     
-    width:60px;
-    height:50px;
-
+    width: 140px;
+    height: 40px;
+    /*border-radius: 5px;*/
+    /*盒子阴影修饰作用,自己随意*/
+    /* box-shadow: 0 0 5px #ccc;*/
+    position: relative;
+    
 }
 
-
-
-
-
-.form-select {
-
-    width: 120%;
-    line-height: 1.5;
-    color: #8D6B52;
+.option select {
+    /*清除select的边框样式*/
+    border: none;
+    /*清除select聚焦时候的边框颜色*/
+    outline: none;
+    /*将select的宽高等于div的宽高*/
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /*隐藏select的下拉图标*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*通过padding-left的值让文字居中*/
+    padding-left: 20px;
     background-color: #FBF9F7;
-    border: 1px solid #8D6B52;
-    border-radius: 0.7rem;
+    border:1px solid #8D6B52;
+    color:#8D6B52;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
 
+/*使用伪类给select添加自己想用的图标*/
+.option:after {
+    content: "";
+    width: 14px;
+    height: 8px;
+    background: url(../img/downarrow.svg) no-repeat center;
+    /*通过定位将图标放在合适的位置*/
+    position: absolute;
+    right: 30px;
+    top: 41%;
+    /*给自定义的图标实现点击下来功能*/
+    pointer-events: none;
 
-    &:focus {
-        box-shadow: none;
-
+    @include large {
+        right:12px;
     }
-
-    &-focus-border-color {
-        border-color: #8D6B52;
-
-    }
-
-    &-focus-box-shadow {
-        box-shadow: none;
-    }
-
-    &-indicator-color {
-        color: #8D6B52;
-    }
-
 
 }
 
-.form-control:focus {
-    border-color: none;
-    box-shadow: none;
 
-}
+// .form-select {
 
-.textarea:focus {
-    border-color: none;
-}
+//     width: 75%;
+//     font-size: 1rem;
+//     line-height: 1.5;
+//     color: #8D6B52;
+//     background-color: #FBF9F7;
+//     border: 1px solid #8D6B52;
+//     border-radius: 0.7rem;
 
+
+//     &:focus {
+//         box-shadow: none;
+
+//     }
+
+//     &-focus-border-color {
+//         border-color: #8D6B52;
+
+//     }
+
+//     &-focus-box-shadow {
+//         box-shadow: none;
+//     }
+
+//     &-indicator-color {
+//         color: #8D6B52;
+//     }
+
+
+// }
+
+// .form-control:focus {
+//     border-color: none;
+//     box-shadow: none;
+
+// }
+
+// .textarea:focus {
+//     border-color: none;
+// }
+
+
+// .selectbar {
+//     display: grid;
+//     grid-template-columns: 100px 120px 120px;
+//     grid-gap: 15px 83px;
+
+//     @include smallsize {
+//         grid-gap: 15px 35px;
+//     }
+
+// }
+
+//搜尋按鈕
 .search {
     margin-top: 65px;
 
@@ -408,12 +506,16 @@ svg{
         a {
             border-radius: 55px;
             background-color: #F6D470;
-            width: 200px;
+            width: 150px;
             padding: 13px 86px;
             font-size: 1.2rem;
             //cursor: pointer;
             padding: 5px 0px;
             text-align: center;
+
+            svg{
+                width:30px;
+            }
 
         }
 
@@ -426,13 +528,22 @@ svg{
 
 }
 
-.selectbar {
-    display: grid;
-    grid-template-columns: 100px 120px 120px;
-    grid-gap: 15px 83px;
+//搜尋服務bar
+.searchbar{
+    max-width:70%;
+    margin: 0 auto;
+    gap:15px;
+    background-color: #FBF9F7;
+    border-radius: 12px;
+    border: 2px solid #8D6B52;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 
-    @include smallsize {
-        grid-gap: 15px 35px;
+    @include mediumsize() {
+        display: none;
     }
 
 }
@@ -726,14 +837,14 @@ svg{
         margin-top: 65px;
     }
 
-    &detail{
+    &detail {
         display: none;
     }
 
 }
 
-.active{
-    color:#8D6B52;
+.active {
+    color: #8D6B52;
     font-weight: bolder;
 }
 
@@ -747,12 +858,13 @@ svg{
 .faqcontent {
 
     cursor: pointer;
+
     a {
         color: #000000;
     }
 
-    img{
-        width:30px;
+    img {
+        width: 30px;
         font-weight: bold;
     }
 }
@@ -767,11 +879,11 @@ svg{
         line-height: 26px;
         text-align: center;
         color: #757575;
-        
+
 
         &:hover {
             text-decoration: underline;
-           
+
         }
 
     }
@@ -785,6 +897,18 @@ svg{
     background-size: contain;
     background-position: bottom;
     position: relative;
+
+    @include minlarge {
+        background-size: cover;
+
+    }
+
+    @include minextralarge {
+        height: 890px;
+
+    }
+
+
 
 
 }

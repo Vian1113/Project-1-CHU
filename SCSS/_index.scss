@@ -180,7 +180,7 @@ sub {
 
 
 //輪播圖上的標語
-.solgan {
+.solgan, .svcsolgan {
     position: absolute;
     top: 6%;
     left: 50%;
@@ -386,31 +386,30 @@ svg {
 
 
 .option {
-    /*用div的样式代替select的样式*/
+    /*用div的樣式代替select的樣式*/
     
     width: 140px;
     height: 40px;
-    /*border-radius: 5px;*/
-    /*盒子阴影修饰作用,自己随意*/
+    /*盒子陰影修饰作用,自己随意*/
     /* box-shadow: 0 0 5px #ccc;*/
     position: relative;
     
 }
 
 .option select {
-    /*清除select的边框样式*/
+    /*清除select的邊框樣式*/
     border: none;
-    /*清除select聚焦时候的边框颜色*/
+    /*清除select聚焦时候的邊框颜色*/
     outline: none;
-    /*将select的宽高等于div的宽高*/
+    /*將select的寬高等於div的寬高*/
     width: 100%;
     height: 40px;
     line-height: 40px;
-    /*隐藏select的下拉图标*/
+    /*隐藏select的下拉圖標*/
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    /*通过padding-left的值让文字居中*/
+    /*通過padding-left的值讓文字居中*/
     padding-left: 20px;
     background-color: #FBF9F7;
     border:1px solid #8D6B52;
@@ -419,17 +418,17 @@ svg {
     border-radius: 0.3rem;
 }
 
-/*使用伪类给select添加自己想用的图标*/
+/*使用偽類给select添加自己想用的圖標*/
 .option:after {
     content: "";
     width: 14px;
     height: 8px;
     background: url(../img/downarrow.svg) no-repeat center;
-    /*通过定位将图标放在合适的位置*/
+    /*通過定位將圖標放在合適的位置*/
     position: absolute;
     right: 30px;
     top: 41%;
-    /*给自定义的图标实现点击下来功能*/
+    /*給自定義的圖標實現點擊下來功能*/
     pointer-events: none;
 
     @include large {
@@ -439,59 +438,6 @@ svg {
 }
 
 
-// .form-select {
-
-//     width: 75%;
-//     font-size: 1rem;
-//     line-height: 1.5;
-//     color: #8D6B52;
-//     background-color: #FBF9F7;
-//     border: 1px solid #8D6B52;
-//     border-radius: 0.7rem;
-
-
-//     &:focus {
-//         box-shadow: none;
-
-//     }
-
-//     &-focus-border-color {
-//         border-color: #8D6B52;
-
-//     }
-
-//     &-focus-box-shadow {
-//         box-shadow: none;
-//     }
-
-//     &-indicator-color {
-//         color: #8D6B52;
-//     }
-
-
-// }
-
-// .form-control:focus {
-//     border-color: none;
-//     box-shadow: none;
-
-// }
-
-// .textarea:focus {
-//     border-color: none;
-// }
-
-
-// .selectbar {
-//     display: grid;
-//     grid-template-columns: 100px 120px 120px;
-//     grid-gap: 15px 83px;
-
-//     @include smallsize {
-//         grid-gap: 15px 35px;
-//     }
-
-// }
 
 //搜尋按鈕
 .search {
@@ -541,6 +487,9 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
+    -webkit-box-shadow: -1px 5px 8px -2px rgba(30, 23, 17, 0.66);
+    box-shadow: -1px 5px 8px -2px rgba(30, 23, 17, 0.66);
+
 
     @include mediumsize() {
         display: none;

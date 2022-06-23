@@ -2,9 +2,12 @@
 
 $(document).ready(function () {
 
+    
+    
     //漢堡選單
-    $('.hambar').click(function (event) {
-        event.preventDefault();
+    $('.hambar').click(function (e) {
+        e.preventDefault();
+        //增加「e」表示event, 是為了要把a連結特有的會跳轉到其他頁的特性取消掉
         $('.navmobile').slideToggle(600);
     });
 
@@ -55,8 +58,18 @@ $(document).ready(function () {
 
     });
 
+    //Page top
 
+    $(".pagetopbtn").click(function(e){
+        e.preventDefault();
+        $("html").animate({
 
+            scrollTop:0,
+        },
+        500);
+
+        //500為0.5秒，為animate裡用來設定滑動到最上方(scrollTop:0)時的秒數
+    });
 
 
 

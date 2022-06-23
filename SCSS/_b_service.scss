@@ -65,6 +65,9 @@
 .detail {
     text-align: justify;
 
+    
+
+
     h5 {
         font-weight: bold;
     }
@@ -72,6 +75,35 @@
     p {
         color: #757575;
         font-weight: 600;
+    }
+}
+
+.d{
+    &left{
+        @include extraextralarge {
+            margin-left: 1.5rem;
+            margin-top: 0;
+        }
+    
+        @include mediumsize {
+            margin-top: 1.5rem;
+            margin-left: 0;
+            
+        }
+    }
+
+    &right{
+
+        @include extraextralarge {
+            margin-right: 1.5rem;
+            margin-top: 0;
+        }
+    
+        @include mediumsize {
+            margin-top: 1.5rem;
+            margin-right: 0;
+            
+        }
     }
 }
 
@@ -121,19 +153,24 @@
     top: 120px;
 
     @include extralarge {
-        left: 187px;
-        top: 288px;
+        left: 123px;
+        top: 78px;
     }
 
 
     @include large {
-        left: 123px;
-        top: 257px;
+        left: 50px;
+        top: 70px;
     }
 
     @include mediumsize {
-        left: 48px;
-        top: 225px;
+        left: 0px;
+        top: 64px;
+    }
+
+    @include smallsize {
+        left: 26px;
+        
     }
 
 }
@@ -143,18 +180,24 @@
     top: 120px;
 
     @include extralarge {
-        right: 187px;
-        top: 288px;
+        right: 123px;
+        top: 78px;
     }
 
 
     @include large {
-        right: 123px;
-        top: 257px;
+        right: 50px;
+        top: 70px;
     }
 
     @include mediumsize {
-        right: 48px;
-        top: 225px;
+        right: 0px;
+        top: 64px;
     }
+
+    @include smallsize {
+        right: 26px;
+        
+    }
+
 }

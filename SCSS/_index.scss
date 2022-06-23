@@ -147,17 +147,20 @@ sub {
 }
 
 //輪播圖
+
+:root {
+    --swiper-theme-color: #F6D470;
+  }
+
 .swiper {
 
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: initial;
 
 }
 
-.swiper-pagination-bullet-active {
-    background-color: #8D6B52
-}
+
 
 .swiper-pagination {
     @include smallsize {
@@ -168,7 +171,6 @@ sub {
 .swiper-button-next1,
 .swiper-button-prev1 {
 
-    color: #F6D470;
 
     @include smallsize {
         display: none;
@@ -707,7 +709,7 @@ svg {
 
 .swiper-button-next2,
 .swiper-button-prev2 {
-    color: #F6D470;
+   
     position: absolute;
 
 
@@ -841,7 +843,7 @@ svg {
 
 .footerimg {
     height: 600px;
-    background-image: url("../img/footer-bg.png");
+    background-image: url("../img/footer-bg-2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;

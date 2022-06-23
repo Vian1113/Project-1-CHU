@@ -12968,34 +12968,34 @@ svg {
   }
 }
 
-.saloncontent {
+.serviceintro {
   height: 915px;
   background-image: url("../img/saloncontent.png");
   background-position: center;
 }
 @media (max-width: 768px) {
-  .saloncontent {
+  .serviceintro {
     height: 620px;
   }
 }
-.saloncontent .container {
+.serviceintro .container {
   min-height: 775px;
 }
-.saloncontent .banner-text {
+.serviceintro .banner-text {
   margin-top: 25px;
 }
 @media (max-width: 768px) {
-  .saloncontent .banner-text {
+  .serviceintro .banner-text {
     margin-top: -195px;
   }
 }
 @media (max-width: 768px) {
-  .saloncontent .contentlist p {
+  .serviceintro .contentlist p {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  .saloncontent .contentlist p {
+  .serviceintro .contentlist p {
     font-size: 0.8rem;
   }
 }
@@ -13005,4 +13005,16 @@ svg {
 }
 .salonguest .star {
   max-width: 60%;
+}
+
+.serviceintro.sitting {
+  background-image: url("../img/sittingcontent.png");
+}
+
+.serviceintro.walking {
+  background-image: url("../img/walkingcontent.png");
+}
+
+.serviceintro.clinic {
+  background-image: url("../img/cliniccontent.png");
 }/*# sourceMappingURL=all.css.map */

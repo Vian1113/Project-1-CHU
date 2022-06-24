@@ -12243,11 +12243,8 @@ sub {
   padding: 16px 6px;
   z-index: 100;
 }
-#socialiconshow {
-  display: block;
-}
 
-.header {
+header {
   position: relative;
 }
 
@@ -12274,39 +12271,29 @@ sub {
   }
 }
 
-.solgan, .svcsolgan {
+.solgan {
   position: absolute;
-  top: 6%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
   color: #ffffff;
 }
-@media (max-width: 992px) {
-  .solgan, .svcsolgan {
-    top: 4%;
-  }
-}
-@media (max-width: 576px) {
-  .solgan, .svcsolgan {
-    top: 3%;
-  }
-}
-.solgan h2, .solgan .h2, .svcsolgan h2, .svcsolgan .h2 {
+.solgan h2, .solgan .h2 {
   font-weight: bold;
   font-size: 2.5rem;
 }
 @media (max-width: 576px) {
-  .solgan h2, .solgan .h2, .svcsolgan h2, .svcsolgan .h2 {
+  .solgan h2, .solgan .h2 {
     font-size: 1.5rem;
   }
 }
-.solgan p, .svcsolgan p {
+.solgan p {
   font-weight: bold;
   font-size: 0.8rem;
 }
 @media (max-width: 576px) {
-  .solgan p, .svcsolgan p {
+  .solgan p {
     font-size: 0.5rem;
   }
 }
@@ -13021,4 +13008,66 @@ svg {
 
 .serviceintro.funeral {
   background-image: url("../img/funeralcontent.png");
+}
+
+.socialicon {
+  position: fixed;
+  top: 60px;
+  left: 25px;
+  padding: 16px 6px;
+  z-index: 100;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+.pagetop img {
+  margin-bottom: 8px;
+}
+.pagetop p {
+  font-family: "Nuosu SIL", serif;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+.formwrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.formdetail {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.formdetail .form-label:after {
+  content: " *";
+  color: #464A53;
+  font-size: 80%;
+}
+
+.submitarea a:hover {
+  text-decoration: underline;
+}
+
+.signform .form-check-label a {
+  display: inline-block;
+  color: #8D6B52;
+}
+.signform .form-check-label a:hover {
+  text-decoration: underline;
+}
+
+.insignpage {
+  height: 800px;
 }/*# sourceMappingURL=all.css.map */

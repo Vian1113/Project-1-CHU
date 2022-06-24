@@ -133,17 +133,15 @@ sub {
     padding: 16px 6px;
     z-index: 100;
 
-    &show {
-        display: block;
-    }
-
+ 
 }
 
 
 
 // Navbar與輪播首圖
-.header {
+header {
     position: relative;
+    
 }
 
 //輪播圖
@@ -182,21 +180,14 @@ sub {
 
 
 //輪播圖上的標語
-.solgan, .svcsolgan {
+.solgan {
     position: absolute;
-    top: 6%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
     color: #ffffff;
 
-    @include large {
-        top: 4%;
-    }
-
-    @include smallsize {
-        top: 3%;
-    }
 
 
     h2 {

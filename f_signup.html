@@ -116,21 +116,23 @@
 
     <div class="row justify-content-center">
       <form class="pt-2 pb-5 col-md-8 col-xl-6 formdetail">
-        <div class="mb-3">
-          <h4 class="fw-bold">註冊新帳號</h4>
+        <h4 class="fw-bold">註冊新帳號</h4>
+        <div class="mb-3  d-flex justify-content-between">
+          <div class="col-5">
           <label for="name" class="form-label fw-bolder">姓名</label>
           <input type="text" class="form-control" required="required" placeholder="請輸入您的完整姓名" id="name">
+          </div>
 
-        </div>
-        <div class="mb-3">
+          <div class="col-6">
           <label for="telphone" class="form-label fw-bolder">電話</label>
           <input type="tel" class="form-control" required="required" placeholder="請輸入您的聯絡電話" id="telphone">
+          </div>
 
         </div>
 
-
+        <!-- 所在城市/區 -->
         <div class="mb-3 d-flex justify-content-between">
-          <div class="col-5">
+          <div class="col-6">
             <label for="telphone" class="form-label fw-bolder">所在城市</label>
             <select class="form-select" aria-label="Default select example">
               <option selected>城市</option>
@@ -151,6 +153,17 @@
             </select>
           </div>
         </div>
+
+        <div class="mb-3">
+          
+          <label for="account" class="form-label fw-bolder">帳號</label>
+          <input type="text" class="form-control" required="required" placeholder="example@mail.com" id="account">
+         
+
+        </div>
+
+
+       
 
         <div class="mb-3">
           <label for="password" class="form-label fw-bolder">設定密碼</label>

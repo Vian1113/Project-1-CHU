@@ -12749,6 +12749,7 @@ svg {
 }
 
 .footerimg {
+  position: relative;
   height: 600px;
   background-image: url("../img/footer-bg-2.png");
   background-repeat: no-repeat;
@@ -13070,4 +13071,136 @@ svg {
 
 .insignpage {
   height: 800px;
+}
+
+.cardwrap {
+  gap: 20px;
+}
+
+.cardbody,
+.cardimage,
+.reasondetail {
+  width: 250px;
+  height: 300px;
+}
+
+.cardbody {
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.cardbody:hover {
+  transform: rotateY(180deg);
+}
+
+.reasondetail {
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-image: linear-gradient(to bottom, rgba(251, 249, 247, 0.7) 0%, rgba(251, 249, 247, 0.7) 100%), url(../img/reason-6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.reasondetail .detailarea {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #ffffff;
+}
+.reasondetail .detailarea p {
+  font-size: 0.9rem;
+}
+
+.cardbg-2 {
+  background-image: linear-gradient(to bottom, rgba(251, 249, 247, 0.7) 0%, rgba(251, 249, 247, 0.7) 100%), url(../img/reason-7.png);
+}
+
+.cardbg-3 {
+  background-image: linear-gradient(to bottom, rgba(251, 249, 247, 0.7) 0%, rgba(251, 249, 247, 0.7) 100%), url(../img/reason-8.png);
+  background-size: 70%;
+}
+
+.cardimage {
+  position: absolute;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: url(../img/reason-1.png) no-repeat center/contain;
+  border-radius: 20px;
+  filter: drop-shadow(5px 7px 4px rgba(141, 106, 82, 0.8));
+}
+.cardimage h4, .cardimage .h4 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #ffffff;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 8px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardsitting {
+  background-image: url(../img/reason-2.png);
+}
+
+.cardreferred {
+  background-image: url(../img/reason-3.png);
+}
+
+.contact .subtitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.submitbtn {
+  color: #ffffff;
+}
+
+.contact {
+  background-image: url(../img/contact.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 45%;
+}
+.contact form {
+  border: 1px solid #8D6B52;
+}
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+  background: rgba(255, 255, 255, 0.5);
+}
+.contact .fa-phone-flip,
+.contact .fa-envelope,
+.contact .fa-comment-dots {
+  color: #8D6B52;
+}
+
+.eventbtn button {
+  border-radius: 0;
+}
+.eventarea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.detailbtn {
+  border: 2px dashed;
+  background-color: #FBF9F7;
+}
+.detailbtn a {
+  color: #8D6B52;
+}
+.detailbtn a:hover {
+  color: #ffffff;
 }/*# sourceMappingURL=all.css.map */

@@ -5,14 +5,13 @@ $(document).ready(function () {
     
     
     //漢堡選單
-    $('.hambar').click(function (e) {
-        e.preventDefault();
-        //增加「e」表示event, 是為了要把a連結特有的會跳轉到其他頁的特性取消掉
+    $('.hambar').click(function () {
+       
         $('.navmobile').slideToggle(600);
     });
 
-    $('.navmobile li a').click(function (event) {
-        event.preventDefault();
+    $('.navmobile li a').click(function () {
+       
         //收起來
         $('.navmobile').slideUp(600);
     });
@@ -23,7 +22,7 @@ $(document).ready(function () {
     
     $(".faqcontent").click(function (e) {
         e.preventDefault();
-        
+        //增加「e」表示event, 是為了要把a連結特有的會跳轉到其他頁的特性取消掉，會使用a連結是為了讓它有可點擊性
         $(this).find("h5").toggleClass("active");
         var y=true;
         var x = $(this).siblings("p");

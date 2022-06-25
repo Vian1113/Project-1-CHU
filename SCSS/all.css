@@ -12241,7 +12241,7 @@ sub {
   top: 60px;
   left: 25px;
   padding: 16px 6px;
-  z-index: 100;
+  z-index: 4;
 }
 
 header {
@@ -12755,7 +12755,6 @@ svg {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  position: relative;
 }
 @media (min-width: 1300px) {
   .footerimg {

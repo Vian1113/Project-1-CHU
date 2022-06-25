@@ -12813,11 +12813,20 @@ svg {
     gap: 10px;
   }
 }
+.bookingbar img {
+  max-width: 70%;
+}
 
 @media (max-width: 992px) {
   .booking a {
-    width: 120px;
-    font-size: 1rem;
+    width: 80px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .booking a {
+    width: 65px;
+    font-size: 0.5rem;
   }
 }
 
@@ -13181,6 +13190,10 @@ svg {
 .contact .fa-envelope,
 .contact .fa-comment-dots {
   color: #8D6B52;
+}
+.contact .formdetail {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .eventbtn button {

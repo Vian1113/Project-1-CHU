@@ -20,6 +20,12 @@
 
 
 
+@mixin extralargebig {
+    @media(max-width:1400px) {
+        @content;
+    }
+}
+
 @mixin extralarge {
     @media(max-width:1200px) {
         @content;

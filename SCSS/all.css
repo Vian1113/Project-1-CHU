@@ -13197,8 +13197,23 @@ svg {
 }
 
 .eventbtn button {
-  border-radius: 0;
+  border: 1px solid #FFFFFF;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.eventbtn .detailbtn {
+  border: 2px dashed #8D6B52;
+  background-color: #FBF9F7;
+}
+.eventbtn .detailbtn:hover {
+  background-color: #8D6B52;
+}
+.eventbtn .detailbtn a {
+  color: #8D6B52;
+}
+.eventbtn .detailbtn a:hover {
+  color: #ffffff;
+}
+
 .eventarea {
   position: absolute;
   top: 50%;
@@ -13207,13 +13222,56 @@ svg {
   z-index: 5;
 }
 
-.detailbtn {
-  border: 2px dashed;
+.petsitterbg {
+  height: 750px;
+  width: 100%;
+  background-image: url(../img/bgimage-12.png);
+  background-repeat: no-repeat;
+  background-position: 15% 25%;
+  background-size: 48%;
+}
+@media (max-width: 992px) {
+  .petsitterbg {
+    height: 520px;
+  }
+}
+.petsitterbg .heroarea {
+  position: absolute;
+  top: 300px;
+  right: 15%;
+  z-index: 5;
+  text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+}
+@media (max-width: 1400px) {
+  .petsitterbg .heroarea {
+    top: 239px;
+    right: 5%;
+  }
+}
+@media (max-width: 992px) {
+  .petsitterbg .heroarea {
+    top: 173px;
+    right: 2%;
+  }
+}
+
+.container .subtitle {
+  color: #757575;
+}
+.container .multiitem p {
+  color: #757575;
+}
+
+.eventarea .detailbtn2 {
+  border: 2px dashed #F6D470;
   background-color: #FBF9F7;
 }
-.detailbtn a {
-  color: #8D6B52;
+.eventarea .detailbtn2:hover {
+  background-color: #F6D470;
 }
-.detailbtn a:hover {
+.eventarea .detailbtn2 a {
+  color: #F6D470;
+}
+.eventarea .detailbtn2 a:hover {
   color: #ffffff;
 }/*# sourceMappingURL=all.css.map */

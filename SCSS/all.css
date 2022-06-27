@@ -12637,7 +12637,7 @@ svg {
 .sitter {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: inherit;
   position: relative;
 }
 
@@ -12707,7 +12707,7 @@ svg {
 }
 
 .faq {
-  margin-top: 100px;
+  margin-top: 270px;
 }
 @media (max-width: 1200px) {
   .faq {
@@ -12736,6 +12736,7 @@ svg {
 .faqcontent img {
   width: 30px;
   font-weight: bold;
+  max-width: none;
 }
 
 .moreqa a {
@@ -13274,4 +13275,66 @@ svg {
 }
 .eventarea .detailbtn2 a {
   color: #F6D470;
+}
+
+.faqarea {
+  background: #FFFFFF;
+  border: 3px solid #8D6B52;
+  border-radius: 30px;
+  position: relative;
+  top: -50px;
+  z-index: 8;
+}
+
+.csarea {
+  background-image: url("../img/bgimage-14.png");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center;
+  height: 376px;
+  width: 100%;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .csarea {
+    height: 205px;
+  }
+  .csarea h2, .csarea .h2 {
+    font-size: 1rem;
+  }
+  .csarea p {
+    font-size: 0.3rem;
+  }
+  .csarea .btn {
+    font-size: 0.5rem;
+  }
+}
+.csarea .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.csarea .container button {
+  border: none;
+}
+.csarea .container .detailbtn {
+  border: 2px solid #8D6B52;
+  background: rgba(255, 255, 255, 0.85);
+}
+.csarea .container .detailbtn:hover {
+  background-color: #8D6B52;
+}
+.csarea svg {
+  width: 28px;
+}
+
+.footerimg.faqpage {
+  height: 683px;
+}
+@media (max-width: 768px) {
+  .footerimg.faqpage {
+    height: 457px;
+  }
 }/*# sourceMappingURL=all.css.map */

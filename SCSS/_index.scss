@@ -220,13 +220,7 @@ header {
     font-size: 0.8rem;
 }
 
-// .headercontent {
-//     position: absolute;
-//     top: 0%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     z-index: 10;
-// }
+
 
 
 //Logo
@@ -698,7 +692,7 @@ svg {
 .sitter {
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: inherit;
     position: relative;
 
 }
@@ -781,7 +775,7 @@ svg {
 //常見問題
 
 .faq {
-    margin-top: 100px;
+    margin-top: 270px;
 
     @include extralarge {
         margin-top: 65px;
@@ -790,6 +784,8 @@ svg {
     &detail {
         display: none;
     }
+
+   
 
 }
 
@@ -816,6 +812,7 @@ svg {
     img {
         width: 30px;
         font-weight: bold;
+        max-width:none;
     }
 }
 

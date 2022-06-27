@@ -13207,11 +13207,11 @@ svg {
 .eventbtn .detailbtn:hover {
   background-color: #8D6B52;
 }
+.eventbtn .detailbtn:hover a {
+  color: #ffffff;
+}
 .eventbtn .detailbtn a {
   color: #8D6B52;
-}
-.eventbtn .detailbtn a:hover {
-  color: #ffffff;
 }
 
 .eventarea {
@@ -13269,9 +13269,9 @@ svg {
 .eventarea .detailbtn2:hover {
   background-color: #F6D470;
 }
+.eventarea .detailbtn2:hover a {
+  color: #ffffff;
+}
 .eventarea .detailbtn2 a {
   color: #F6D470;
-}
-.eventarea .detailbtn2 a:hover {
-  color: #ffffff;
 }/*# sourceMappingURL=all.css.map */

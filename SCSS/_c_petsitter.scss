@@ -51,14 +51,14 @@
         background-color: #FBF9F7;
         &:hover{
             background-color: #F6D470;
+            a{
+                color:#ffffff;
+            }
         }
     
         a {
             color: #F6D470;
-            &:hover{
-                
-                color:#ffffff;
-            }
+            
         }
     }
 

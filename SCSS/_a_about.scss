@@ -151,14 +151,14 @@
         background-color: #FBF9F7;
         &:hover{
             background-color: #8D6B52;
+            a{
+                color:#ffffff;
+            }
         }
     
         a {
             color: #8D6B52;
-            &:hover{
-                
-                color:#ffffff;
-            }
+            
         }
     }
 

@@ -13223,6 +13223,70 @@ svg {
   z-index: 5;
 }
 
+.joinbg {
+  height: 820px;
+  width: 100%;
+  background-image: url(../img/bgimage-15.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+}
+@media (max-width: 1400px) {
+  .joinbg {
+    height: 665px;
+  }
+}
+@media (max-width: 992px) {
+  .joinbg {
+    height: 590px;
+  }
+}
+@media (max-width: 768px) {
+  .joinbg {
+    height: 438px;
+  }
+}
+.joinbg .heroarea {
+  position: absolute;
+  top: 300px;
+  right: 15%;
+  z-index: 5;
+  text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+}
+@media (max-width: 1920px) {
+  .joinbg .heroarea {
+    top: 260px;
+    right: 20%;
+  }
+}
+@media (max-width: 1400px) {
+  .joinbg .heroarea {
+    right: 10%;
+  }
+}
+
+.joinlist li {
+  border-radius: 10px;
+}
+
+.joinform {
+  border: 3px dashed #F6D470;
+  border-radius: 30px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.joinform .joinitem {
+  margin: 0 auto;
+}
+
+.joinad {
+  background-color: #ffffff;
+}
+
+.form-check .form-check-input {
+  float: none;
+}
+
 .petsitterbg {
   height: 750px;
   width: 100%;

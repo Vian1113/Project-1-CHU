@@ -13278,6 +13278,13 @@ svg {
 .joinform .joinitem {
   margin: 0 auto;
 }
+.joinform .input-group {
+  width: none;
+}
+
+.join-img {
+  max-width: 15%;
+}
 
 .joinad {
   background-color: #ffffff;
@@ -13285,6 +13292,60 @@ svg {
 
 .form-check .form-check-input {
   float: none;
+}
+
+.reviewname {
+  gap: 15px;
+}
+
+.qualitybanner {
+  background-image: url("../img/bgimage-16.png");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center;
+  height: 290px;
+  width: 100%;
+  position: relative;
+}
+.qualitybanner .textarea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #ffffff;
+}
+.qualitybanner .textarea button {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .qualitybanner .textarea h3, .qualitybanner .textarea .h3 {
+    font-size: 0.8rem;
+  }
+  .qualitybanner .textarea p {
+    font-size: 0.5rem;
+  }
+  .qualitybanner .textarea .btn {
+    font-size: 0.5rem;
+  }
+}
+
+.quality {
+  position: relative;
+  z-index: 3;
+}
+.quality .quiltyitem p {
+  text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+}
+
+.qualityimg {
+  position: absolute;
+  width: 45%;
+  top: 135px;
+}
+
+.joinfaq {
+  margin-top: 100px;
 }
 
 .petsitterbg {
